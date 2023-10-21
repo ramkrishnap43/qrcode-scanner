@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   btn : {
     marginTop : 10,
     marginBottom : 20,
+  },
+  pTag : {
+    color:'#8c2bce',
+    fontSize : 20,
   }
 }))
 
@@ -58,7 +62,7 @@ const QrCode = () => {
 
                 <>
                 <a href={qrImage} download><img className={classes.image} src={qrImage} alt='qrImage' /></a>
-                <p>Scan The QR Code to access tha data</p>
+                <p className={classes.pTag}>Scan The QR Code to access tha data</p>
                 </>
                 : null
               }
